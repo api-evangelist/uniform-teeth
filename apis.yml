@@ -1,8 +1,25 @@
 aid: uniform-teeth
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/uniform-teeth.png
 name: Uniform Teeth
-description: Uniform Teeth is a company surfaced as a portfolio company of canaan-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Uniform Teeth was a San Francisco clear-aligner orthodontics startup founded by
+  Meghan Jewitt and orthodontist Dr. Kjeld Aamodt, launched in 2018, pairing licensed in-clinic
+  orthodontists with a patient app — positioned between traditional orthodontics and
+  direct-to-consumer aligners. Canaan Partners led its $10M Series A. On August 5, 2022 it was
+  acquired by (merged with) Barcelona-based Impress (smile2impress.com) to build a worldwide
+  network of invisible-orthodontic clinics. The company published no public developer API, SDK,
+  or developer portal, and uniformteeth.com no longer serves a site (stale Netlify deployment
+  returning 404); this API Evangelist profile records its identity and domain posture.'
 url: https://raw.githubusercontent.com/api-evangelist/uniform-teeth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +29,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Dental
+- Orthodontics
+- Clear Aligners
+- Telehealth
+- Consumer
+- Acquired
 apis: []
+common:
+- type: DomainSecurity
+  url: security/uniform-teeth-domain-security.yml
+- type: Website
+  url: https://uniformteeth.com/
+  x-status: defunct-404
+- type: Acquirer
+  url: https://smile2impress.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
